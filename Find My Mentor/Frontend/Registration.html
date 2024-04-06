@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+  </head>
+  <style>
+    body {
+      /* background:linear-gradient(to bottom, #27b7fa, #ffd5c9); */
+      /* background:linear-gradient(to bottom, #2AF598, #FDA085); */
+      background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+
+      height: 90vh;
+    }
+
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 60px;
+    }
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 350px;
+      padding: 30px;
+
+      /* padding-left: 13px; */
+      border: 5px solid red;
+      border-radius: 20px;
+      position: relative;
+      background-color: #1a1a1a;
+      color: #fff;
+      border: 5px solid #e9f5db;
+      box-shadow: 15px 15px 35px rgba(0, 0, 0, 1);
+    }
+    .form:hover {
+      box-shadow: 20px 20px 40px rgba(0, 0, 0, 2);
+      transition: ease-out 0.3s;
+    }
+    .title {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: -1px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-left: 30px;
+      color: #00bfff;
+    }
+
+    .title::before {
+      width: 18px;
+      height: 18px;
+    }
+
+    .title::after {
+      width: 18px;
+      height: 18px;
+      animation: pulse 1s linear infinite;
+    }
+
+    .title::before,
+    .title::after {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      left: 0px;
+      background-color: #00bfff;
+    }
+
+    .message,
+    .signin {
+      font-size: 14.5px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .signin {
+      text-align: center;
+    }
+
+    .signin a:hover {
+      text-decoration: underline royalblue;
+    }
+
+    .signin a {
+      color: #00bfff;
+    }
+
+    .flex {
+      display: flex;
+      width: 100%;
+      gap: 6px;
+    }
+
+    .form label {
+      position: relative;
+    }
+
+    .form label .input {
+      background-color: #333;
+      color: #fff;
+      width: 100%;
+      padding: 20px 05px 05px 10px;
+      outline: 0;
+      border: 1px solid rgba(105, 105, 105, 0.397);
+      border-radius: 10px;
+    }
+
+    .form label .input + span {
+      color: rgba(255, 255, 255, 0.5);
+      position: absolute;
+      left: 10px;
+      top: 0px;
+      font-size: 0.9em;
+      cursor: text;
+      transition: 0.3s ease;
+    }
+
+    .form label .input:placeholder-shown + span {
+      top: 12.5px;
+      font-size: 0.9em;
+    }
+
+    .form label .input:focus + span,
+    .form label .input:valid + span {
+      color: #00bfff;
+      top: 0px;
+      font-size: 0.7em;
+      font-weight: 600;
+    }
+
+    .input {
+      font-size: medium;
+    }
+
+    .submit {
+      border: none;
+      outline: none;
+      padding: 10px;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 16px;
+      transform: 0.3s ease;
+      background-color: #00bfff;
+    }
+
+    .submit:hover {
+      background-color: #00bfff96;
+    }
+
+    @keyframes pulse {
+      from {
+        transform: scale(0.9);
+        opacity: 1;
+      }
+
+      to {
+        transform: scale(1.8);
+        opacity: 0;
+      }
+    }
+  </style>
+  <body>
+    <div class="main">
+      <form class="form">
+        <p class="title">Register</p>
+        <p class="message">Signup now and get full access to our app.</p>
+        <div class="flex">
+          <label>
+            <input class="input" type="text" placeholder="" required="" />
+            <span>Firstname</span>
+          </label>
+
+          <label>
+            <input class="input" type="text" placeholder="" required="" />
+            <span>Lastname</span>
+          </label>
+        </div>
+
+        <label>
+          <input class="input" type="email" placeholder="" required="" />
+          <span>Email</span>
+        </label>
+
+        <label>
+          <input class="input" type="password" placeholder="" required="" />
+          <span>Password</span>
+        </label>
+        <label>
+          <input class="input" type="password" placeholder="" required="" />
+          <span>Confirm password</span>
+        </label>
+        <button class="submit">Submit</button>
+        <p class="signin">Already have an acount ? <a href="login.html">Signin</a></p>
+      </form>
+    </div>
+  </body>
+</html>

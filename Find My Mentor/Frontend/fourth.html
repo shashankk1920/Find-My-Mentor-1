@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Inter, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+
+    .photo {
+        height: 12rem;
+        cursor: pointer;
+        border-radius: 1.2rem;
+    }
+
+    .main {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .search-box {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    input {
+        width: 40%;
+        padding: 7px 8px 7px 8px;
+        border: 2px solid grey;
+        border-radius: 20rem;
+    }
+
+    .btn {
+        width: 20%;
+        padding: 10px 8px 5px 10px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border: 2px solid white;
+        border-radius: 20rem;
+        background-color: red;
+        color: white;
+    }
+
+    .btn1,
+    .btn2,
+    .btn3,
+    .btn4,
+    .btn5 {
+        /* border: none; */
+        outline: none;
+        padding: 8px 6px 8px 6px;
+        border: 2px solid white;
+        background-color: rgb(210, 221, 221);
+        border-radius: 1rem;
+        cursor: pointer;
+        color: black;
+        margin-top: 14px;
+        
+    }
+
+    .content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 3rem;
+        margin-top: 5rem;
+
+    }
+    span{
+        line-height: 23px;
+        font-size: 1.1rem;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="search-box">
+            <input type="text" placeholder="Search members">
+            <button class="btn">View all mentors</button>
+        </div>
+        <div class="content">
+            <div class="content1">
+                <div class="image">
+                    <img src="https://cdn.mentorcruise.com/cdn-cgi/image/width=368,format=auto/https://cdn.mentorcruise.com/cache/7cc9ae24bfac0d75a8ac425e2630084a/e725af5a79338631/27e0c5ff9c83159f7069ae195b9a1302.jpg"
+                        alt="" class="photo">
+                </div>
+                <div class="contain">
+                    <h2>Sanjeev Subedi</h2>
+                    <span class="kuchh">Staff Software Engineer at eBay</span>
+                </div>
+                <div class="experties">
+                    <button class="btn1">JavaScript</button>
+                    <button class="btn2">TypeScript</button>
+                    <button class="btn3">Angular</button>
+                </div>
+            </div>
+            <div class="content1">
+                <div class="image">
+                    <img src="https://media.licdn.com/dms/image/D4D03AQE7nqKAaxBMWQ/profile-displayphoto-shrink_800_800/0/1683112059573?e=2147483647&v=beta&t=gArafZRFSXnpyPzcnj6tOecHGR16mOIWMXPYuCENgvM"
+                        alt="" class="photo">
+                </div>
+                <div class="contain">
+                    <h2>Krunal Parmar</h2>
+                    <span>Product Leadership Coach (ex-Director of Product) at ex-ServiceNow, ex-Yandex</span>
+                </div>
+                <div class="experties">
+                    <button class="btn1">Promotion</button>
+                    <button class="btn2">Accountability</button>
+                    <button class="btn3">Career Growth</button>
+                </div>
+            </div>
+            <div class="content1">
+                <div class="image">
+                    <img src="https://cdn.mentorcruise.com/cdn-cgi/image/width=368,format=auto/https://cdn.mentorcruise.com/cache/f17dfa0060b62f5f3ed3b7104c9a9dc5/8d09e6cd281c9cf6/b718c7217c43fed314fabed83e502f8b.jpg"
+                        alt="" class="photo">
+                </div>
+                <div class="contain">
+                    <h2>Mladen Ruzicic</h2>
+                    <span>Senior Frontend Developer at ZF, Ex-Shopify</span>
+                </div>
+                <div class="experties">
+                    <button class="btn1">Frontend</button>
+                    <button class="btn2">JavaScript</button>
+                    <button class="btn3">Data Analytics</button>
+                  
+                </div>
+            </div>
+            <div class="content1">
+                <div class="image">
+                    <img src="https://media.licdn.com/dms/image/D5603AQHxsA_j1GglCw/profile-displayphoto-shrink_800_800/0/1674852667981?e=2147483647&v=beta&t=6nMKib2385KF0mGroFRFTnGUADTLMdZlF2WdRnVKpYc"
+                        alt="" class="photo">
+                </div>
+                <div class="contain">
+                    <h2>Vikas Malhotra</h2>
+                    <span>Senior Engineering Manager at Amazon</span>
+                </div>
+                <div class="experties">
+                    <button class="btn1">Interview Preparation</button>
+                    <button class="btn2">FAANG</button>
+                    <button class="btn3">Interview</button>
+                </div>
+            </div>
+            <div class="content1">
+                <div class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU54P7UtuxTk-sz_0O7z9rJCH4w6z1Rb2qNRm-5XkNEA&s"
+                        alt="" class="photo">
+                </div>
+                <div class="contain">
+                    <h2>James Booth</h2>
+                    <span>CTO at Attune</span>
+                </div>
+                <div class="experties">
+                    <button class="btn1">Leadership</button>
+                    <button class="btn2">Software Architecture</button>
+                    <button class="btn3">AWS</button>
+                </div>
+            </div>
+            <div class="content1">
+                <div class="image">
+                    <img src="https://cdn.mentorcruise.com/cdn-cgi/image/width=340,format=auto/https://cdn.mentorcruise.com/richmedia/ux-impact-julien-leforestierbb90bdb6-82a0-4513-b95f-14eb6545c2d5.jpg"
+                        alt="" class="photo">
+                </div>
+                <div class="contain">
+                    <h2>Julien Leforestier</h2>
+                    <span>Senior User Researcher at Spotify</span>
+                </div>
+                <div class="experties">
+                    <button class="btn1">Research</button>
+                    <button class="btn2">Survey</button>
+                    <button class="btn3">Ethnographic</button>
+                </div>
+            </div>
+            <div class="content1">
+                <div class="image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTK4QQIc4abnt-s1J_ec6zku2ZzYJqU_W_R6lL41bD0g&s"
+                        alt="" class="photo">
+                </div>
+                <div class="contain">
+                    <h2>Jeff Solomon</h2>
+                    <span>Entrepreneur, Investor & 5x Founder: 3 Exits, $35MM+ Venture Raised, 500+ Advisory Calls at Professional Mentor/Teacher</span>
+                </div>
+                <div class="experties">
+                    <button class="btn1">Research</button>
+                    <button class="btn2">Survey</button>
+                    <button class="btn3">Career Growth</button>
+                </div>
+            </div>
+            <div class="content1">
+                <div class="image">
+                    <img src="https://media.licdn.com/dms/image/D5603AQHAc3H0-hY1UA/profile-displayphoto-shrink_800_800/0/1709260261919?e=2147483647&v=beta&t=b7as_m0vvle8rEB-Iuan-GX0oQJRuf3_nBtwV-v8wTI"
+                        alt="" class="photo">
+                </div>
+                <div class="contain">
+                    <h2>Rahul Ramkumar</h2>
+                    <span>Senior Security Engineer at Large ☁️ Co</span>
+                </div>
+                <div class="experties">
+                    <button class="btn1">Penetration Testing</button>
+                    <button class="btn2">Security Engineering</button>
+                    <button class="btn3">Teaching</button>
+                    <button class="btn4">Application Security</button>
+                </div>
+            </div>
+            <div class="content1">
+                <div class="image">
+                    <img src="https://pbs.twimg.com/profile_images/1193470226660118528/T81etkU__400x400.jpg"
+                        alt="" class="photo">
+                </div>
+                <div class="contain">
+                    <h2>Tanvi Mathur</h2>
+                    <span>Product Manager at Microsoft</span>
+                </div>
+                <div class="experties">
+                    <button class="btn1">Product Management</button>
+                    <button class="btn2">Agile</button>
+                    <button class="btn3">Software Product</button>
+                </div>
+            </div>
+            <div class="content1">
+                <div class="image">
+                    <img src="https://pbs.twimg.com/profile_images/863049358635413507/3eAQ3kwe_400x400.jpg"
+                        alt="" class="photo">
+                </div>
+                <div class="contain">
+                    <h2>Logapriya V</h2>
+                    <span>Data Scientist at Amazon India (Ex Mu Sigma)</span>
+                </div>
+                <div class="experties">
+                    <button class="btn1">Data Science</button>
+                    <button class="btn2">Data Analysis</button>
+                    <button class="btn3">Python</button>
+                    <button class="btn4">Project Management</button>
+                </div>
+            </div>
+            <div class="content1">
+                <div class="image">
+                    <img src="https://cdn.mentorcruise.com/cache/d049c8870696ad02024a6272c0196eab/b56219241ce4121b/f28672ad48fa9f791eb3d9ec5ad1423c.jpg"
+                        alt="" class="photo">
+                </div>
+                <div class="contain">
+                    <h2>Anna Dzehilevych</h2>
+                    <span>Co-founder and CEO at Sensy</span>
+                </div>
+                <div class="experties">
+                    <button class="btn1">Product Management</button>
+                    <button class="btn2">Customer Development</button>
+                    <button class="btn3">Product Planning</button>
+                    <button class="btn5">Managers</button>
+                </div>
+            </div>
+            <div class="content1">
+                <div class="image">
+                    <img src="https://cdn.mentorcruise.com/cache/4fc0122d7323c6acb66c702dcf3dabc2/5d9b7b173ed7859b/e6774bf14117b3b84a908a0970d70350.jpg"
+                        alt="" class="photo">
+                </div>
+                <div class="contain">
+                    <h2>Dariia Drobotko</h2>
+                    <span>Senior Javascript developer / Team Lead at Capgemini</span>
+                </div>
+                <div class="experties">
+                    <button class="btn1">JavaScript</button>
+                    <button class="btn2">Software Development</button>
+                    <button class="btn3">Web Development</button>
+                    <button class="btn4">Technical Interviews</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

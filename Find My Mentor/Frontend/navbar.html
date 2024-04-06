@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="canonical" href="https://mentorcruise.com/">
+
+    <!-- <noscript
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    </noscript> -->
+    <link rel="stylesheet" href="https://cdn.mentorcruise.com/css/minireset.css">
+    <link rel="preload" href="https://cdn.mentorcruise.com/css/app.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.mentorcruise.com/css/app.min.css">
+    </noscript>
+    <link rel="stylesheet" type="text/css" href="https://cdn.mentorcruise.com/css/tailwind.min.css" />
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6M7X6J" height="0"
+            width="0"></iframe></noscript>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/css/autoComplete.min.css">
+</head>
+
+<div>
+
+
+
+    <body>
+        </style>
+        <div class="bg-white">
+            <div class="menu-home border-0 border-b border-solid border-gray-100">
+                <header class="bg-white shadow" x-data="{ mobileOpen: false }">
+                    <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:divide-y lg:divide-gray-200 lg:px-8">
+                        <div class="relative flex gap-x-8 h-16 justify-between">
+                            <div class="hidden sm:flex relative z-10 px-2 lg:px-0">
+                                <div class="flex flex-shrink-0 items-center w-[180px]">
+                                    <a class="w-full pt-1" href="/">
+                                        <img style="width: 180px !important;"
+                                            src="https://www.communitypsychology.com/wp-content/uploads/2018/07/Mentor-icon-for-Anderson.jpg" alt="Mentor">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="flex sm:hidden relative z-10 flex px-2 lg:px-0">
+                                <div class="flex flex-shrink-0 items-center w-8">
+                                    <a href="/">
+                                        <img class="w-full w-auto"
+                                            src="https://www.communitypsychology.com/wp-content/uploads/2018/07/Mentor-icon-for-Anderson.jpg"
+                                            alt="MentorCruise">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="relative z-0 flex flex-1 px-2 items-center justify-center sm:inset-0">
+                                <div class="w-full hidden sm:block sm:max-w-xs md:max-w-sm" id="search-form">
+                                    <label for="search" class="sr-only">Search</label>
+                                    <div class="relative">
+                                        <div
+                                            class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                                         
+                                        </div>
+                                        <form>
+                                            <input id="search" name="search" value
+                                                class="block w-full rounded-md border-0 bg-white py-1.5 pl-10 pr-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                                placeholder="Search" type="search">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative z-10 flex items-center lg:hidden">
+
+                                <button type="button" @click="mobileOpen = !mobileOpen"
+                                    class="relative border-0 bg-transparent inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                                    aria-controls="mobile-menu" aria-expanded="false">
+                                    <span class="absolute -inset-0.5"></span>
+                                    <span class="sr-only">Open menu</span>
+                                </button>
+                            </div>
+                            <div class="hidden lg:relative lg:z-10 lg:ml-4 lg:flex gap-x-8 lg:items-center">
+                                <div x-data="{ open: false }" @mouseover="open = true" @mouseleave="open = false"
+                                    class="relative inline-block text-left">
+                                    <div>
+                                        <div type="button"
+                                            class="text-gray-900 cursor-default py-4 text-sm font-normal whitespace-nowrap"
+                                            id="menu-button" :aria-expanded="open" aria-haspopup="true">
+                                            For Businesses
+                                            <svg class="-mr-1 h-5 w-5 text-gray-900 align-middle" viewBox="0 0 20 20"
+                                                fill="currentColor" aria-hidden="true">
+                                                <path fill-rule="evenodd"
+                                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                    clip-rule="evenodd" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div x-show="open" style="display: none;"
+                                        class="absolute right-0 z-10 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                        role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
+                                        tabindex="-1" x-transition:enter="transition ease-out duration-100"
+                                        x-transition:enter-start="transform opacity-0 scale-95"
+                                        x-transition:enter-end="transform opacity-100 scale-100"
+                                        x-transition:leave="transition ease-in duration-75"
+                                        x-transition:leave-start="transform opacity-100 scale-100"
+                                        x-transition:leave-end="transform opacity-0 scale-95">
+                                        <div class="py-1" role="none">
+                                            <a href="/teams/"
+                                                class="text-gray-900 inline-block w-full px-4 py-2 text-sm hover:bg-gray-100"
+                                                role="menuitem" tabindex="-1" id="menu-item-0">Mentorship for Teams</a>
+                                            <a href="/teams/info/"
+                                                class="text-gray-900 inline-block w-full px-4 py-2 text-sm hover:bg-gray-100"
+                                                role="menuitem" tabindex="-1" id="menu-item-1">Information for
+                                                Employers</a>
+                                            <a href="/executives/"
+                                                class="text-gray-900 inline-block w-full px-4 py-2 text-sm hover:bg-gray-100"
+                                                role="menuitem" tabindex="-1" id="menu-item-2">Executive & CEO
+                                                Coaching</a>
+                                            <a href="/fractional-executive/"
+                                                class="text-gray-900 inline-block w-full px-4 py-2 text-sm hover:bg-gray-100"
+                                                role="menuitem" tabindex="-1" id="menu-item-3">Fractional Executives</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="teal-btn w-full text-center small" id="main-cta" href="/mentor/browse/"
+                                    title="Find a mentor">
+                                    Browse all mentors
+                                </a>
+                                <a class="text-gray-900 text-sm font-normal" href="/auth/login/" title="Login">
+                                    Login
+                                </a>
+                            </div>
+                        </div>
+                        <div class="scrollable-list-container">
+                            <nav id="subnav"
+                                class="hidden lg:flex lg:space-x-4 lg:py-2 border-solid border-0 border-t border-gray-100 overflow-x-auto no-scrollbar w-full"
+                                aria-label="Global">
+
+                                <a href="/skill/engineering/"
+                                    class="text-gray-900 hover:bg-gray-100  inline-flex items-center rounded-md py-2 px-3 text-sm whitespace-nowrap">Engineering
+                                    Mentors</a>
+                                <a href="/skill/design/"
+                                    class="text-gray-900 hover:bg-gray-100  inline-flex items-center rounded-md py-2 px-3 text-sm whitespace-nowrap">Design
+                                    Mentors</a>
+                                <a href="/skill/startup/"
+                                    class="text-gray-900 hover:bg-gray-100  inline-flex items-center rounded-md py-2 px-3 text-sm whitespace-nowrap">Startup
+                                    Mentors</a>
+                                <a href="/skill/product%20management/"
+                                    class="text-gray-900 hover:bg-gray-100  inline-flex items-center rounded-md py-2 px-3 text-sm whitespace-nowrap">Product
+                                    Managers</a>
+                                <a href="/skill/marketing/"
+                                    class="text-gray-900 hover:bg-gray-100  inline-flex items-center rounded-md py-2 px-3 text-sm whitespace-nowrap">Marketing
+                                    Coaches</a>
+                                <a href="/skill/leadership/"
+                                    class="text-gray-900 hover:bg-gray-100  inline-flex items-center rounded-md py-2 px-3 text-sm whitespace-nowrap">Leadership
+                                    Mentors</a>
+                                <a href="/skill/career/"
+                                    class="text-gray-900 hover:bg-gray-100  inline-flex items-center rounded-md py-2 px-3 text-sm whitespace-nowrap">Career
+                                    Coaches</a>
+                                <a href="/top/"
+                                    class="text-gray-900 hover:bg-gray-100  inline-flex items-center rounded-md py-2 px-3 text-sm whitespace-nowrap">Top
+                                    Mentors</a>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <nav class="lg:hidden" aria-label="Global" id="mobile-menu" x-show="mobileOpen"
+                        style="display: none;">
+                        <div class="space-y-1 px-2 pb-3 pt-2">
+
+                            <a href="/mentor/browse/"
+                                class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-block w-full rounded-md py-2 px-3 text-base font-medium"
+                                aria-current="page">Find a mentor</a>
+                            <a href="/teams/"
+                                class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-block w-full rounded-md py-2 px-3 text-base font-medium">For
+                                businesses</a>
+                            <a href="/auth/login/"
+                                class="text-gray-900 hover:bg-gray-50 hover:text-gray-900 inline-block w-full rounded-md py-2 px-3 text-base font-medium">Login</a>
+                        </div>
+                    </nav>
+                </header>
+                <style>
+                    /* only on desktop */
+
+                    @media (min-width: 1024px) {
+                        .scrollable-list-container {
+                            position: relative;
+                            width: 100%;
+                            /* Adjust based on your layout requirements */
+                        }
+
+                        .scrollable-list-container::after {
+                            content: '';
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            width: 20px;
+                            /* Width of the gradient */
+                            height: 100%;
+                            background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+                            pointer-events: none;
+                            /* Ensures clicks pass through */
+                        }
+                    }
+                </style>
+            </div>
+            <div class="flex w-full max-w-screen-xl mx-auto px-8">
+                <div class="w-full px-4">
+                    <div class="mt-24 mb-12 mx-auto sm:mt-28">
+                        <p class="hidden sm:block text-navy-900 text-md leading-7 font-normal mt-2 mb-6">
+                            Learn a new skill, launch a project, land your dream career.
+                        </p>
+                        <h1 class="tracking-tight font-normal text-4xl sm:text-6xl leading-tighter">
+                            <span class="font-bold text-navy-900">1-on-1</span><br class="block lg:hidden" />
+                            <span class="font-bold text-teal-600" id="typed-headline">Career</span><br
+                                class="hidden md:block" />
+                            <span class="font-bold text-navy-900">Mentorship</span>
+                            <h1 class="hidden">1-on-1 Mentorship</h1>
+                        </h1>
+                    </div>
+                    <div class="flex flex-col md:flex-row max-w-screen-lg mt-4">
+                        <div class="w-full">
+                            <form action="/mentor/browse/" method="get"
+                                class="max-w-xl flex flex-col items-center space-y-4 md:space-y-0 border border-solid border-gray-300 md:flex-row relative w-full text-navy-900 bg-white p-1 rounded-lg">
+                                <div class="flex w-full">
+                                    <input type="text" name="search" placeholder="Search by company, skills or role"
+                                        autocomplete="off" tabindex="0" id="autocomplete"
+                                        class="w-full text-base p-2 md:pl-4 font-medium border-0 placeholder-opacity-80 placeholder-mc-shade-dark text-navy-900 outline-none">
+                                </div>
+                                <div class="w-full md:w-fit">
+                                    <button type="submit" class="teal-btn w-full whitespace-nowrap">
+                                        Find mentors
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="hidden sm:flex gap-2 mt-6 max-w-lg flex-wrap">
+                                <a href="/skill/Product%20Management/"
+                                    class="inline-flex items-center rounded-full bg-gray-100 hover:bg-gray-200 px-2 py-1 text-xs font-medium text-gray-600 transition-all duration-150 whitespace-nowrap">Product
+                                    Managers</a>
+                                <a href="/skill/Career/"
+                                    class="inline-flex items-center rounded-full bg-gray-100 hover:bg-gray-200 px-2 py-1 text-xs font-medium text-gray-600 transition-all duration-150 whitespace-nowrap">Career
+                                    Coaches</a>
+                                <a href="/skill/Software%20Engineering/"
+                                    class="inline-flex items-center rounded-full bg-gray-100 hover:bg-gray-200 px-2 py-1 text-xs font-medium text-gray-600 transition-all duration-150 whitespace-nowrap">Software
+                                    Engineers</a>
+                                <a href="/skill/Leadership/"
+                                    class="inline-flex items-center rounded-full bg-gray-100 hover:bg-gray-200 px-2 py-1 text-xs font-medium text-gray-600 transition-all duration-150 whitespace-nowrap">Leadership
+                                    Mentors</a>
+                                <a href="/skill/UX%20Design/"
+                                    class="inline-flex items-center rounded-full bg-gray-100 hover:bg-gray-200 px-2 py-1 text-xs font-medium text-gray-600 transition-all duration-150 whitespace-nowrap">UX
+                                    Designers</a>
+                                <a href="/skill/Data%20Science/"
+                                    class="inline-flex items-center rounded-full bg-gray-100 hover:bg-gray-200 px-2 py-1 text-xs font-medium text-gray-600 transition-all duration-150 whitespace-nowrap">Data
+                                    Scientists</a>
+                                <a href="/skill/Startup/"
+                                    class="inline-flex items-center rounded-full bg-gray-100 hover:bg-gray-200 px-2 py-1 text-xs font-medium text-gray-600 transition-all duration-150 whitespace-nowrap">Startup
+                                    Founders</a>
+                            </div>
+                            <div class="hidden sm:block bg-white pt-20 pb-6">
+                                <div>
+                                    <dl class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-3 max-w-xl">
+                                        <div class="flex max-w-xs flex-col gap-y-2">
+                                            <dt class="text-sm leading-7 text-gray-600">Available mentors</dt>
+                                            <dd class="order-first text-2xl font-semibold tracking-tight text-gray-900">
+                                                4,600+
+                                            </dd>
+                                        </div>
+                                        <div class="flex max-w-xs flex-col gap-y-2">
+                                            <dt class="text-sm leading-7 text-gray-600">Matches made</dt>
+                                            <dd class="order-first text-2xl font-semibold tracking-tight text-gray-900">
+                                                17,900+
+                                            </dd>
+                                        </div>
+                                        <div class="flex max-w-xs flex-col gap-y-2">
+                                            <dt class="text-sm leading-7 text-gray-600">Countries represented</dt>
+                                            <dd class="order-first text-2xl font-semibold tracking-tight text-gray-900">
+                                                130+
+                                            </dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden lg:block">
+                    <div class="marqueetb max-w-md">
+                        <div class="roll-container w-full">
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/sanjeevsubedi/?ref=home_slider&source=featured" class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/7cc9ae24bfac0d75a8ac425e2630084a/e725af5a79338631/27e0c5ff9c83159f7069ae195b9a1302.jpg"
+                                                    alt="Sanjeev Subedi">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Sanjeev Subedi</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Staff Software
+                                                    Engineer at
+                                                    eBay
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 align-middle text-navy-500">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">JavaScript</span>
+                                                <span class="tag-sm mb-1.5">Typescript</span>
+                                                <span class="tag-sm mb-1.5">Angular</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/romanyusufov/?ref=home_slider&source=featured" class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/e6ea356ec133173c5c0bcd8ca0d553fb/ea9efa3abf801d3c/b74863c37a455dbb760eacdc22ecfa50.jpg"
+                                                    alt="Roman Yusufov">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Roman Yusufov</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Senior Software
+                                                    Engineer | Certified Career Coach | Interview Expert at
+                                                    Amazon
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 align-middle text-navy-500">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">Software Engineering</span>
+                                                <span class="tag-sm mb-1.5">Career Growth</span>
+                                                <span class="tag-sm mb-1.5">Career Coaching</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/miklosphilips/?ref=home_slider&source=featured" class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/86468e4d1ffc6ca3df57789ba12d13e0/273f665002afbcf8/036929268b5c40872c693e8c90c424a0.jpg"
+                                                    alt="Miklos Philips">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Miklos Philips</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Product
+                                                    Designer
+                                                </p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">UX</span>
+                                                <span class="tag-sm mb-1.5">UI</span>
+                                                <span class="tag-sm mb-1.5">Product Design</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/vikasmalhotra/?ref=home_slider&source=featured" class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/e04c7181b0cea7f884c149e3d4f28f8c/581a2135bf4b684f/04af0cf0fae8f5f012ed9bf2caa5c276.jpg"
+                                                    alt="Vikas Malhotra">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Vikas Malhotra</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Senior
+                                                    Engineering
+                                                    Manager at
+                                                    Amazon
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 align-middle text-navy-500">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">Interview Preparation</span>
+                                                <span class="tag-sm mb-1.5">Interview</span>
+                                                <span class="tag-sm mb-1.5">FAANG</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/mariateresastella/?ref=home_slider&source=featured"
+                                    class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/8c44d420077196301ff27b8f7adb97c6/a2b46e72aea54a4b/d360829b0cdc3d51ef5263368484cdf9.jpg"
+                                                    alt="Maria Teresa Stella">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Maria Teresa Stella</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Senior UX
+                                                    Designer
+                                                </p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">UX Research</span>
+                                                <span class="tag-sm mb-1.5">UX Design</span>
+                                                <span class="tag-sm mb-1.5">Ux Strategy</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/benjaminkaiser/?ref=home_slider&source=featured" class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/7537ce1a7bb3063d44220bdded0e70da/5f4cbe6178cb7fe1/3034950088e7680e87cea64f50157b37.jpg"
+                                                    alt="Benjamin Kaiser">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Benjamin Kaiser</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Principal
+                                                    Software
+                                                    Engineer at
+                                                    Microsoft
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 align-middle text-navy-500">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">JavaScript</span>
+                                                <span class="tag-sm mb-1.5">React</span>
+                                                <span class="tag-sm mb-1.5">NodeJS</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/annalisavalente/?ref=home_slider&source=featured"
+                                    class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/726873122fdde5102cb2a82606be4693/17b26094503e537b/4676f963d31938d88dae94e8b2aba67e.jpg"
+                                                    alt="Annalisa Valente">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Annalisa Valente</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Staff Product
+                                                    Designer</p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">UX Design</span>
+                                                <span class="tag-sm mb-1.5">Leadership</span>
+                                                <span class="tag-sm mb-1.5">Visual Design</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/chrishammerschmidt/?ref=home_slider&source=featured"
+                                    class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/401650f47185119d39312b56fe449d14/e1a673eb6acd3b2e/811cfc4c706b8bef125e74bf1d5ad92d.jpg"
+                                                    alt="Chris Hammerschmidt">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Chris Hammerschmidt</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">ML Research
+                                                    Scientist and Founder</p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">Machine Learning</span>
+                                                <span class="tag-sm mb-1.5">Data Science</span>
+                                                <span class="tag-sm mb-1.5">Product Market Fit</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/ahmedsadmanmuhib/?ref=home_slider&source=featured"
+                                    class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/17c178a02f4ac8ead76f619d1af28c5d/a9cbdb036cf33c3c/d52c475b351845de083477193f6d0be9.jpg"
+                                                    alt="Ahmed Sadman Muhib">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Ahmed Sadman Muhib</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Software
+                                                    Engineer
+                                                </p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">Web Development</span>
+                                                <span class="tag-sm mb-1.5">Python</span>
+                                                <span class="tag-sm mb-1.5">JavaScript</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/annakotliarevskaia/?ref=home_slider&source=featured"
+                                    class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/cc1979a6e5411eac82aa3f8d145e01ac/b3028c0d92a589a9/7f4fb124e4124c270649aeab3cf47ea8.jpg"
+                                                    alt="Anna Peterson">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Anna Peterson</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Product
+                                                    Leadership
+                                                    Coach (ex-Director of Product)</p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">Leadership</span>
+                                                <span class="tag-sm mb-1.5">Management</span>
+                                                <span class="tag-sm mb-1.5">Product</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/julienleforestier/?ref=home_slider&source=featured"
+                                    class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/d51c4c431d2e5a58e1afb1d32cfc87fd/a5f7fc2cc2e2e86f/085f6d9e14ce7b6d9f58ea4964518a07.jpg"
+                                                    alt="Julien Leforestier">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Julien Leforestier</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Senior User
+                                                    Researcher at
+                                                    Spotify
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 align-middle text-navy-500">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">Research</span>
+                                                <span class="tag-sm mb-1.5">Ethnographic</span>
+                                                <span class="tag-sm mb-1.5">Survey</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/naveedahmedjanvekar/?ref=home_slider&source=featured"
+                                    class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/56f5388e6f185f999b4cbd491e00349c/c1512b6b0818309d/8761c921328ab5ffc8389e8778f3e4e7.jpg"
+                                                    alt="Naveed Janvekar">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Naveed Janvekar</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Applied Science
+                                                    Manager at
+                                                    Amazon
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 align-middle text-navy-500">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">Machine Learning</span>
+                                                <span class="tag-sm mb-1.5">Data Science</span>
+                                                <span class="tag-sm mb-1.5">Data Analytics</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/federicomaffini/?ref=home_slider&source=featured"
+                                    class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/0ea72b21c994ff9572dbaa2a0c619af0/bcad1b948eda4eaf/9d000b9cc067e83598a36ac33a08bd1e.jpg"
+                                                    alt="Federico Maffini">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Federico Maffini</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Global Team
+                                                    Management | Data &amp; Analysis | Program Management</p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">Data Analytics</span>
+                                                <span class="tag-sm mb-1.5">Program Management</span>
+                                                <span class="tag-sm mb-1.5">Strategy</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/AminGhaderi/?ref=home_slider&source=featured" class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/aaa6ad0320d11cd3690205d98cfa53a2/df2ac0e36a3f960f/c43220b887cf9a340e3eb393dc9c5a3a.jpg"
+                                                    alt="Amin Ghaderi">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Amin Ghaderi</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Data Scientist
+                                                    ||
+                                                    Machine Learning Engineer at
+                                                    Google
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 align-middle text-navy-500">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">Machine Learning</span>
+                                                <span class="tag-sm mb-1.5">Statistics</span>
+                                                <span class="tag-sm mb-1.5">Deep Learning</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/azzamalwan/?ref=home_slider&source=featured" class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/d40b35daf88b3c9bde5de231b6a26fb3/1abf803d03dde41f/d4d6d3882ee515b64ba06406124650f7.jpg"
+                                                    alt="Azzam Alwan">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Azzam Alwan</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Sr. data
+                                                    scientist
+                                                    | TOP 8 inventors in MENA | Phd. ML/DL</p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">Data Science</span>
+                                                <span class="tag-sm mb-1.5">Software Engineering</span>
+                                                <span class="tag-sm mb-1.5">Machine Learning</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/anastasiakaravdina/?ref=home_slider&source=featured"
+                                    class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/676133a187044f3e4466707f79649c01/8c5d0597339c97ad/3249ffdb2f9c5d82c0cd564a2dc839be.jpg"
+                                                    alt="Anastasia Karavdina">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Anastasia Karavdina</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Data Science
+                                                    Manager</p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">Data Science</span>
+                                                <span class="tag-sm mb-1.5">Python</span>
+                                                <span class="tag-sm mb-1.5">Data Analysis</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/gauravverma/?ref=home_slider&source=featured" class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/f51f217d6e5608d4b12ea5b91abf3f94/348feb27538cbd81/7f335f994158ae26dc25c47316808b3a.jpg"
+                                                    alt="Gaurav Verma">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Gaurav Verma</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Senior Data
+                                                    Engineer at
+                                                    Amazon
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 align-middle text-navy-500">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">Data Engineering</span>
+                                                <span class="tag-sm mb-1.5">AWS</span>
+                                                <span class="tag-sm mb-1.5">Data Analytics</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/chrisellinas/?ref=home_slider&source=featured" class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/3785f2f3fbfba2b0a29f2ac759882ce0/1081adc6d60aa906/a06ebdf2f8b2c383d2f9fb1e1130acc8.jpg"
+                                                    alt="Chris Ellinas">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Chris Ellinas</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Graphic
+                                                    Designer,
+                                                    Video Production at
+                                                    Netflix, Disney+, Amazon Prime, Freelance 🍿
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 align-middle text-navy-500">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">Graphic Design</span>
+                                                <span class="tag-sm mb-1.5">Branding</span>
+                                                <span class="tag-sm mb-1.5">Web Design</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/danford/?ref=home_slider&source=featured" class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/882f59518e066a81ab08b33a8563742a/d6b6e184d3621ee4/7770f7f6eb47a4cb82388ed0170d3636.jpg"
+                                                    alt="Dan Ford">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Dan Ford</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Principal
+                                                    Software
+                                                    Developer</p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">Interview Preparation</span>
+                                                <span class="tag-sm mb-1.5">Mock Interviews</span>
+                                                <span class="tag-sm mb-1.5">Interviews</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/phonghuynh/?ref=home_slider&source=featured" class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/74959d74cfcf5b4056057097fe1dc91e/256a1ef6d1e89cf7/aa9287922d2f8cdf5f84697f8f1f14dc.jpg"
+                                                    alt="Phong Huynh">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Phong Huynh</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Senior Software
+                                                    Engineer at
+                                                    Square
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 align-middle text-navy-500">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">JavaScript</span>
+                                                <span class="tag-sm mb-1.5">Typescript</span>
+                                                <span class="tag-sm mb-1.5">React</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/chrisnicol/?ref=home_slider&source=featured" class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/705f1cbd8e593f26175873d9082b5807/aefb66c3ac15f193/28da1c902b2b48ec272a0ace6ba31e00.jpg"
+                                                    alt="Chris Nicol">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Chris Nicol</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Head of Product
+                                                </p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">Product Management</span>
+                                                <span class="tag-sm mb-1.5">Leadership Coaching</span>
+                                                <span class="tag-sm mb-1.5">Product Strategy</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/praveendubey/?ref=home_slider&source=featured" class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/0ce9a51d723a42afd5a89dffc5af9fec/832ff9022e5ca925/e17a8432a4aaa430587509d1fac5674d.jpg"
+                                                    alt="Praveen Dubey">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Praveen Dubey</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Senior Software
+                                                    Engineer at
+                                                    Microsoft
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 align-middle text-navy-500">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">JavaScript</span>
+                                                <span class="tag-sm mb-1.5">Typescript</span>
+                                                <span class="tag-sm mb-1.5">React</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/krunalparmar/?ref=home_slider&source=featured" class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/dc6a2ddfb8cc607d582db7f0d51a80cd/c25fa1adc6704ec4/f40de324a43debdab796b6436e473be6.jpg"
+                                                    alt="Krunal Parmar">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Krunal Parmar</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Engineering
+                                                    Manager
+                                                    at
+                                                    Yelp
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 align-middle text-navy-500">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">Software Engineering</span>
+                                                <span class="tag-sm mb-1.5">Data Structures</span>
+                                                <span class="tag-sm mb-1.5">Java</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/AndreiGavrila/?ref=home_slider&source=featured" class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/8cc909da61293f82d95f8303ee497c79/782ac56053cfe2dd/2ca6cb539106ae08468acfdd6574ac34.jpg"
+                                                    alt="Andrei Gavrila">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Andrei Gavrila</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">CTO | Technical
+                                                    Advisor | Agile Coach | Mentor</p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">CTO</span>
+                                                <span class="tag-sm mb-1.5">Engineering Management</span>
+                                                <span class="tag-sm mb-1.5">Engineering Leadership</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/leosonhoay/?ref=home_slider&source=featured" class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/16d956ae456a57c7fed7b8a2b486b717/fc0e93f2f9c92833/87b95fb661796e6a1584b1bb3942dfc1.jpg"
+                                                    alt="Leoson Hoay">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Leoson Hoay</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">4.9</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Data Scientist
+                                                </p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">Data Science</span>
+                                                <span class="tag-sm mb-1.5">Python</span>
+                                                <span class="tag-sm mb-1.5">Machine Learning</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/jamesbooth/?ref=home_slider&source=featured" class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/9d9af30c4f4111f5ea2aea4098fb58fe/ff2be1aab995dc75/712a7226fdc20e197051718d5d8b763b.jpg"
+                                                    alt="James Booth">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        James Booth</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">CTO</p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">Leadership</span>
+                                                <span class="tag-sm mb-1.5">Software Architecture</span>
+                                                <span class="tag-sm mb-1.5">AWS</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/harryoconnor/?ref=home_slider&source=featured" class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/3c46a740bbee44acc74945bf47872bdb/9b392e1df77d1fb5/10689210163000d47025bdfb94e7bc56.jpg"
+                                                    alt="Harry O&#39;Connor">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Harry O&#39;Connor</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Founder</p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">Entrepreneur</span>
+                                                <span class="tag-sm mb-1.5">Web Design</span>
+                                                <span class="tag-sm mb-1.5">SEO</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/jeffsolomon/?ref=home_slider&source=featured" class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/909689648f9ceb53529b19c4c1d197b4/843b97d7e07866c6/1dfb09c201b9eb7b223660aec3062877.jpg"
+                                                    alt="Jeff Solomon">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Jeff Solomon</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Entrepreneur,
+                                                    Investor &amp; 5x Founder: 3 Exits, $35MM+ Venture Raised, 500+
+                                                    Advisory
+                                                    Calls</p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">Startups</span>
+                                                <span class="tag-sm mb-1.5">Entrepreneurship</span>
+                                                <span class="tag-sm mb-1.5">Venture Capital</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/abhishekjakhar/?ref=home_slider&source=featured" class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/a3795043f11a51745c98d803d441cc98/75ef7cd717469f82/4ee12d9aa2c5a63a8d6426df4901480b.jpg"
+                                                    alt="Abhishek Jakhar">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Abhishek Jakhar</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Senior Software
+                                                    Engineer at
+                                                    Coinbase
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 align-middle text-navy-500">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">JavaScript</span>
+                                                <span class="tag-sm mb-1.5">React</span>
+                                                <span class="tag-sm mb-1.5">CSS</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box mb-4 w-full">
+                                <a href="/mentor/VictorBarros/?ref=home_slider&source=featured" class="has-text-blue">
+                                    <div class="flex gap-x-4">
+                                        <div>
+                                            <figure class="w-16 h-16 rounded">
+                                                <img class="rounded-lg"
+                                                    src="https://cdn.mentorcruise.com/cdn-cgi/image/width=128,format=auto/https://cdn.mentorcruise.com/cache/61c0fbda1694a9bfbdb01a8d0bc73155/fad0c1bfb4d1883b/642da3b3775963aef808baccd67a7219.jpg"
+                                                    alt="Victor Barros">
+                                            </figure>
+                                        </div>
+                                        <div class="justify-between align-center">
+                                            <div class="flex gap-x-2">
+                                                <div>
+                                                    <p class="text-black text-base font-semibold">
+                                                        Victor Barros</p>
+                                                </div>
+                                                <div>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                        fill="currentColor" class="w-4 h-4 text-teal-700 align-middle">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                    <span class="text-sm font-medium text-teal-700">5.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="mt-1">
+                                                <p class="text-gray-500 text-sm whitespace-break-spaces">Founder,
+                                                    Entrepreneur, Investor, Mentor</p>
+                                            </div>
+                                            <div class="flex mt-4 flex-wrap">
+                                                <span class="tag-sm mb-1.5">Product Management</span>
+                                                <span class="tag-sm mb-1.5">Entrepreneurship</span>
+                                                <span class="tag-sm mb-1.5">Startup</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

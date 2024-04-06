@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<style>
+     * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    /* background: linear-gradient(to bottom, #ff7e5f, #4cb8c4); */
+    /* background-color: aqua; */
+}
+#main{
+    /* background-color: #faf5ff; */
+    background-color: #F9F1F0;
+}
+
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+   
+
+    
+    
+
+}
+.container{
+    /* background-color: #cf9cec; */
+    box-shadow: 3px  3px 10px 3px grey;
+    
+    background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  
+    transition: box-shadow 0.3s;
+    border-radius: 1.5rem;
+
+}
+
+.container:hover{
+    
+    box-shadow: 5px  5px 10px 5px grey; 
+    
+
+}
+
+
+
+
+
+
+
+.navbar {
+    background: color crimson;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: color pink;
+
+
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo a {
+    font-size: 40px;
+    font-weight: 900;
+    color: gold;
+    text-decoration: none;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 2);
+
+}
+
+
+
+li {
+    list-style: none;
+    display: inline-block;
+
+    gap: 2rem;
+
+}
+
+li a {
+    color: gold;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 10px;
+    text-decoration: none;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 2);
+
+
+}
+
+li a:hover {
+    font-size: 20px;
+    /* font-weight: 800; */
+    transition: ease-in-out;
+
+}
+
+.shadow__btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+}
+
+.shadow__btn {
+    background: #0057FF;
+    box-shadow: 0 0 25px rgb(5, 140, 251);
+}
+
+.shadow__btn:hover {
+    box-shadow: 0 0 5px rgb(0, 140, 255),
+        0 0 25px rgb(0, 140, 255),
+        0 0 50px rgb(0, 140, 255),
+        0 0 100px rgb(0, 140, 255);
+}
+
+
+
+
+
+.shadow__btn a {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+
+
+img {
+    height: 90px;
+    border-radius: 50%;
+    border-image: fill;
+    transition: transform 0.3s ease;
+
+
+
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 2);
+}
+
+.img:hover {
+    opacity: 0.8;
+    stroke-opacity: var(black);
+    transition: all 0.5s;
+    transform: scale(1.1);
+    /* border: 5px solid black; */
+
+}
+.head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    row-gap: - 1rem;
+    text-align: center;
+    position: relative;
+}
+
+    .main-1 {
+        max-width: 80%;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .head-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    input {
+        width: 40%;
+        padding: 7px 8px 7px 8px;
+        border: 2px solid grey;
+        border-radius: 20rem;
+
+    }
+
+    .Filter {
+        width: 20%;
+        padding: 10px 8px 5px 10px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border: 2px solid white;
+        border-radius: 20rem;
+    }
+
+    .line {
+        background-color: black;
+        height: 1px;
+        margin-top: 2rem;
+        opacity: .4;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        /* background-color: rgb(214, 223, 230); */
+        padding: 6px 8px 6px 8px;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .photo {
+        height: 18rem;
+        margin-left: 3rem;
+        /* width: 200px; */
+    }
+
+    .contain2 {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .h2 {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        font-size: 2rem;
+    }
+
+    .contain2 {
+        font-size: 1.2rem;
+    }
+
+    .experience {
+        color: green;
+        margin-bottom: 70px;
+    }
+
+    .achive {
+        font-weight: 500;
+        line-height: 23px;
+    }
+
+    .btn1,
+    .btn2,
+    .btn3,
+    .btn4,
+    .btn5 {
+        /* border: none; */
+        outline: none;
+        padding: 8px 6px 8px 6px;
+        border: 2px solid white;
+        background-color: rgb(210, 221, 221);
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+
+    .cost {
+        margin-bottom: 1rem;
+        display: flex;
+        /* justify-content: center; */
+        gap: 9rem;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .btn6 {
+        padding: 10px 10px 10px 10px;
+        border: 2px solid green;
+        width: 400%;
+        border-radius: 1rem;
+        background-color: green;
+        color: white;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div id="main">
+        <div class="nav-bar">
+    
+            <div class="container">
+                <nav class="navbar">
+                    <div class="navdiv">
+                        <div class="logo">
+                            <img href="index.html" src="https://media.licdn.com/dms/image/C4D12AQFT48pGRLbPOw/article-cover_image-shrink_720_1280/0/1580425803594?e=2147483647&v=beta&t=eth0x1ja-ULJa3OtzV1z5r_gR-b2ujmVsh7niUqufG0"
+                                alt="Mentoring">
+                            <div class="head">
+                                <a href="index.html">GET YOUR</a>
+                                <a href="index.html">MENTORS</a>
+                            </div>
+                        </div>
+                        <ul>
+                            <li><a href="Engineering.html">Engineering Mentors</a></li>
+                            <li><a href="Design.html">Design Mentors</a></li>
+                            <li><a href="Startup.html">Startup Mentors</a></li>
+                            <!-- <li><a href="#">Marketing Coaches</a></li> -->
+                            <!-- <li><a href="Leadership.html">Leadership Mentors</a></li> -->
+                            <button onclick="redirectTologinpage()" class="shadow__btn"><a
+                                    href="#">Login</a></button>
+                        </ul>
+                    </div>
+                </div>
+    
+                </nav>
+    <div class="main-1">
+        <div class="head-1">
+            <!-- <input type="text" placeholder="Search Mentors">
+            <button class="Filter">Filter</button> -->
+        </div>
+        <div class="line"></div>
+        <h2 class="h2">Find the Mentor for Caarer Making Journey</h2>
+        <div class="about">
+            <div class="contain1">
+                <img src="https://cdn.mentorcruise.com/cdn-cgi/image/width=368,format=auto/https://cdn.mentorcruise.com/cache/62c0e3e10be573bb53da26bd7344e7a5/471a6b269ddf0fca/9e1a0d07639624ae531e20f1f0c57f10.jpg" alt=" no photo" class="photo">
+            </div>
+            <div class="contain2">
+                <h2>Tracy Pham</h2>
+                <span>Data Science Manager</b></span>
+                <span class="experience">Natural Language Processing & Deep Learning</span>
+                <span class="achive">I have been a mentor for more than 2 years on MentorCruise and other online platforms. I find myself loving to help people with their first steps in the "ML journey". I have experience working with many state of the art algorithms in NLP. Using Transformer-based models such as BERT.</span>
+                <div class="contain3">
+                    <button class="btn1">React Js</button>
+                    <button class="btn2">Node Js</button>
+                    <button class="btn3">System Design</button>
+                    <button class="btn4">StartUp</button>
+                    <button class="btn5">Marketing</button>
+                </div>
+                <div class="cost">
+                    <div class="price"><b>Price</b>/Month</div>
+                    <div class="join">
+                        <button class="btn6">View Profile</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="line"></div>
+        <div class="about">
+            <div class="contain1">
+                <img src="https://cdn.mentorcruise.com/cdn-cgi/image/width=368,format=auto/https://cdn.mentorcruise.com/cache/cd6be11a9f1274da09de77b80d09e386/daebb958d515b6c6/7d4c56e9b051d10a7fe3aa61ced7decc.jpg"
+                    alt=" no photo" class="photo">
+            </div>
+            <div class="contain2">
+                <h2>Tanvi Mathur</h2>
+                <span>Product Manager at <b>Microsoft</b></span>
+                <span class="experience">VP of Engineering at Academia.edu</span>
+                <span class="achive">If you're looking to break into Product Management, I'd love to connect and guide you on this journey! I've been at Microsoft for 7+ years. I started my journey at Microsoft as a Support Engineer, moved to Software Development and I am now a Product Manager.</span>
+                <div class="contain3">
+                    <button class="btn1">People Management</button>
+                    <button class="btn2">Mindset</button>
+                    <button class="btn3">Career Development</button>
+                    <button class="btn4">Product Management</button>
+                    <button class="btn5">Coaching</button>
+                </div>
+                <div class="cost">
+                    <div class="price"><b>Price</b>/Month</div>
+                    <div class="join">
+                        <button class="btn6">View Profile</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="line"></div>
+        <div class="about">
+            <div class="contain1">
+                <img src="https://cdn.mentorcruise.com/cdn-cgi/image/width=368,format=auto/https://cdn.mentorcruise.com/cache/331eb4db04d29cc3651d75457b0d6296/93d6a24b360777d7/af4b50c11f6f274a5b056ee83f392cec.jpg" alt=" no photo" class="photo">
+            </div>
+            <div class="contain2">
+                <h2>Taylor Green</h2>
+                <span>Senior Product Designer at <b>Codecademy</b></span>
+                <span class="experience">6+ years experience in UX & Product Design</span>
+                <span class="achive">Hey there! 👋🏼 I'm Taylor, a Senior Product Designer with 6+ years of experience, and a passion for helping others grow in their careers. With a background in cognitive psychology and neuroscience, my approach to design is deeply rooted in understanding how people learn and process information—bringing a unique perspective </span>
+                <div class="contain3">
+                    <button class="btn1">Software Architecture</button>
+                    <button class="btn2">Software Engineering</button>
+                    <button class="btn3">Agile</button>
+                    <button class="btn4">Design Patterns</button>
+                    <button class="btn5">Clean Code</button>
+                </div>
+                <div class="cost">
+                    <div class="price"><b>Price</b>/Month</div>
+                    <div class="join">
+                        <button class="btn6">View Profile</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="line"></div>
+        <div class="about">
+            <div class="contain1">
+                <img src="https://cdn.mentorcruise.com/cdn-cgi/image/width=368,format=auto/https://cdn.mentorcruise.com/cache/177c84dfe7419e97713f125e4827e675/7d3b92d1dfada43c/054ec4498931e8d9d3c968da24c66844.jpg"
+                    alt=" no photo" class="photo">
+            </div>
+            <div class="contain2">
+                <h2>Ellie Linehan</h2>
+                <span>VP Solutions at <b>Canvas GFX</b></span>
+                <span class="experience">3D Product Expert | VP Solutions at Canvas GFX</span>
+                <span class="achive">I am currently VP Solutions at a Series A Startup. I have experience in aerospace design and manufacturing, 2D/3D visualization, enterprise B2B SAAS products, agile product management, technical sales & partnerships and scaling startups. I can help those looking to make a career switch from engineering to product management </span>
+                <div class="contain3">
+                    <button class="btn1">Elixir</button>
+                    <button class="btn2">Phoenix Framework</button>
+                    <button class="btn3">Leadership</button>
+                    <button class="btn4">StartUp</button>
+                    <button class="btn5">Backend</button>
+                </div>
+                <div class="cost">
+                    <div class="price"><b>Price</b>/Month</div>
+                    <div class="join">
+                        <button class="btn6">View Profile</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="line"></div>
+        <div class="about">
+            <div class="contain1">
+                <img src="https://cdn.mentorcruise.com/cdn-cgi/image/width=368,format=auto/https://cdn.mentorcruise.com/cache/2643944fc42e747aa7dcbed28de405d7/89d1fb9ac7e5b117/f91d2b77406ca1d81581bc6d993e32ae.jpg"
+                    alt=" no photo" class="photo">
+            </div>
+            <div class="contain2">
+                <h2>Sara Malvar</h2>
+                <span>Senior Software Engineer at <b>Microsoft</b></span>
+                <span class="experience">10+ years of experience with Machine Learning, AI and Data Science</span>
+
+                <span class="achive">I'm an electrical engineer with 8+ years of experience with data analytics (IBM). I have a master degree and Ph.D. degree in Engineering. I've been working as mentor for Udacity for the last 3 years and I'm an instructor at Data Science Dojo. I've been a consultant for Shell, Fastshop.</span>
+
+                <div class="contain3">
+                    <button class="btn1">Engineering Management</button>
+                    <button class="btn2">Software Engineering</button>
+                    <button class="btn4">Career</button>
+                    <button class="btn5">Marketing</button>
+                </div>
+                <div class="cost">
+                    <div class="price"><b>Price</b>/Month</div>
+                    <div class="join">
+                        <button class="btn6">View Profile</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="line"></div>
+        <div class="about">
+            <div class="contain1">
+                <img src="https://cdn.mentorcruise.com/cdn-cgi/image/width=368,format=auto/https://cdn.mentorcruise.com/cache/e3ed8003baa5f05e1d6561423eedde47/1a35c8f7a545b3f9/711578663bab437e868fcf3b8599c879.jpg"
+                    alt=" no photo" class="photo">
+            </div>
+            <div class="contain2">
+                <h2>Laura Ma</h2>
+                <span>Head of TikTok Partnerships Strategy </span>
+                <span class="experience">8+ years of experience in startups fundraising and business strategy</span>
+
+                <span class="achive">I have 8+ years of experience in startups fundraising, business strategy, product and pricing strategy, OKR and KPI planning, budgeting, financial projection, product management, and global market expansion. I successfully helped one startup grow from series B to D and five seed-stage startups secured series-A. I look forward to working.</span>
+
+                <div class="contain3">
+                    <button class="btn1">Promotion</button>
+                    <button class="btn2">Accountability</button>
+                    <button class="btn3">Career Growth</button>
+                    <button class="btn5">Managers</button>
+                </div>
+                <div class="cost">
+                    <div class="price"><b>Price</b>/Month</div>
+                    <div class="join">
+                        <button class="btn6">View Profile</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="line"></div>
+        <div class="about">
+            <div class="contain1">
+                <img src="https://cdn.mentorcruise.com/cdn-cgi/image/width=368,format=auto/https://cdn.mentorcruise.com/cache/bed1168d206ea2738f6855e600762e21/719926477da24cd2/56cfe80ae1250cd1f47c89eeb9784965.jpg"
+                    alt=" no photo" class="photo">
+            </div>
+            <div class="contain2">
+                <h2> Seda Elibol</h2>
+                <span>Senior Product Manager at <b>N26</b></span>
+                <span class="experience">Product Management & Career Coaching</span>
+                <span class="achive">Hello, mentees!👋 I’m a Product Manager based in Berlin. Throughout my career, I worked on an HR platform where I learned to build modules from scratch like Recruiting, and online food ordering apps where I gained experience in experimentation to improve mCVR funnels & and global ad-tech for food ordering.</span>
+
+                <div class="contain3">
+                    <button class="btn1">React Js</button>
+                    <button class="btn2">Founder</button>
+                    <button class="btn3">System Design</button>
+                    <button class="btn4">Entrepreneurship</button>
+                </div>
+                <div class="cost">
+                    <div class="price"><b>Price</b>/Month</div>
+                    <div class="join">
+                        <button class="btn6">View Profile</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
+    <script src="app.js"></script>
+</body>
+
+</html>

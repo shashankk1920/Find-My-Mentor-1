@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+<style>
+      * {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    /* background: linear-gradient(to bottom, #ff7e5f, #4cb8c4); */
+    /* background-color: aqua; */
+}
+#main{
+    /* background-color: #faf5ff; */
+    background-color: #F9F1F0;
+}
+
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+   
+
+    
+    
+
+}
+.container{
+    /* background-color: #cf9cec; */
+    box-shadow: 3px  3px 10px 3px grey;
+    
+    background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  
+    transition: box-shadow 0.3s;
+    border-radius: 1.5rem;
+
+}
+
+.container:hover{
+    
+    box-shadow: 5px  5px 10px 5px grey; 
+    
+
+}
+
+
+
+
+
+
+
+
+.navbar {
+    background: color crimson;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: color pink;
+
+
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo a {
+    font-size: 40px;
+    font-weight: 900;
+    color: gold;
+    text-decoration: none;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 2);
+
+}
+
+
+
+li {
+    list-style: none;
+    display: inline-block;
+
+    gap: 2rem;
+
+}
+
+li a {
+    color: gold;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 10px;
+    text-decoration: none;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 2);
+
+
+}
+
+li a:hover {
+    font-size: 20px;
+    /* font-weight: 800; */
+    transition: ease-in-out;
+
+}
+
+.shadow__btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+}
+
+.shadow__btn {
+    background: #0057FF;
+    box-shadow: 0 0 25px rgb(5, 140, 251);
+}
+
+.shadow__btn:hover {
+    box-shadow: 0 0 5px rgb(0, 140, 255),
+        0 0 25px rgb(0, 140, 255),
+        0 0 50px rgb(0, 140, 255),
+        0 0 100px rgb(0, 140, 255);
+}
+
+
+
+
+
+.shadow__btn a {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+
+
+img {
+    height: 90px;
+    border-radius: 50%;
+    border-image: fill;
+    transition: transform 0.3s ease;
+
+
+
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 2);
+}
+
+.img:hover {
+    opacity: 0.8;
+    stroke-opacity: var(black);
+    transition: all 0.5s;
+    transform: scale(1.1);
+    /* border: 5px solid black; */
+
+}
+.head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    row-gap: - 1rem;
+    text-align: center;
+    position: relative;
+}
+    .main-4 {
+        max-width: 80%;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .head-4 {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    input {
+        width: 40%;
+        padding: 7px 8px 7px 8px;
+        border: 2px solid grey;
+        border-radius: 20rem;
+
+    }
+
+    .Filter {
+        width: 20%;
+        padding: 10px 8px 5px 10px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        border: 2px solid white;
+        border-radius: 20rem;
+    }
+
+    .line {
+        background-color: black;
+        height: 1px;
+        margin-top: 2rem;
+        opacity: .4;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+        /* background-color: rgb(214, 223, 230); */
+        padding: 6px 8px 6px 8px;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .photo {
+        height: 18rem;
+        margin-left: 3rem;
+        /* width: 200px; */
+    }
+
+    .contain2 {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .h2 {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        font-size: 2rem;
+    }
+
+    .contain2 {
+        font-size: 1.2rem;
+    }
+
+    .experience {
+        color: green;
+        margin-bottom: 70px;
+    }
+
+    .achive {
+        font-weight: 500;
+        line-height: 23px;
+    }
+
+    .btn1,
+    .btn2,
+    .btn3,
+    .btn4,
+    .btn5 {
+        /* border: none; */
+        outline: none;
+        padding: 8px 6px 8px 6px;
+        border: 2px solid white;
+        background-color: rgb(210, 221, 221);
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+
+    .cost {
+        margin-bottom: 1rem;
+        display: flex;
+        /* justify-content: center; */
+        gap: 9rem;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .btn6 {
+        padding: 10px 10px 10px 10px;
+        border: 2px solid green;
+        width: 400%;
+        border-radius: 1rem;
+        background-color: green;
+        color: white;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div id="main">
+        <div class="nav-bar">
+    
+            <div class="container">
+                <nav class="navbar">
+                    <div class="navdiv">
+                        <div class="logo">
+                            <img href="index.html" src="https://media.licdn.com/dms/image/C4D12AQFT48pGRLbPOw/article-cover_image-shrink_720_1280/0/1580425803594?e=2147483647&v=beta&t=eth0x1ja-ULJa3OtzV1z5r_gR-b2ujmVsh7niUqufG0"
+                                alt="Mentoring">
+                            <div class="head">
+                                <a href="index.html">GET YOUR</a>
+                                <a href="index.html">MENTORS</a>
+                            </div>
+                        </div>
+                        <ul>
+                            <li><a href="Engineering.html">Engineering Mentors</a></li>
+                            <li><a href="Design.html">Design Mentors</a></li>
+                            <li><a href="Startup.html">Startup Mentors</a></li>
+                            <!-- <li><a href="#">Marketing Coaches</a></li> -->
+                            <!-- <li><a href="Leadership.html">Leadership Mentors</a></li> -->
+                            <button onclick="redirectTologinpage()" class="shadow__btn"><a
+                                    href="#">Login</a></button>
+                        </ul>
+                    </div>
+                </div>
+    
+                </nav>
+    <div class="main-4">
+        <div class="head-4">
+            <!-- <input type="text" placeholder="Search Mentors">
+            <button class="Filter">Filter</button> -->
+        </div>
+        <div class="line"></div>
+        <h2 class="h2">Find the Mentor for Business</h2>
+        <div class="about">
+            <div class="contain1">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipM0bXwczPYkz_OwIU4ZXxBhdr_oMKbfEd-Q_UIM=s1360-w1360-h1020"
+                    alt=" no photo" class="photo">
+            </div>
+            <div class="contain2">
+                <h2>Saurabh Kaushik</h2>
+                <span>Business Coach and Life Strategist</span>
+                <span class="experience">Create sustainable enterprises and brands that scale organically and deliver
+                    the value you intended, the way you intended - to all its stakeholders</span>
+                <span class="achive">Saurabh Kaushik is a peak performance business coach and life strategist serving
+                    leading business owners, Fortune 500 leaders and deliver
+                    the value you intended, the way you intended - to all its stakeholders</span>
+                <div class="contain3">
+                    <button class="btn1">React Js</button>
+                    <button class="btn2">Node Js</button>
+                    <button class="btn3">System Design</button>
+                    <button class="btn4">StartUp</button>
+                    <button class="btn5">Marketing</button>
+                </div>
+                <div class="cost">
+                    <div class="price"><b>Price</b>/Month</div>
+                    <div class="join">
+                        <button class="btn6">View Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="about">
+            <div class="contain1">
+                <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQBIu016yZGtm98DqalXmCbGsZHlBFzBNf_9jbKXjEd5QEAPyZMuRMu40trBh8nT5jM3nlP643oVVVgQ_g"
+                    alt=" no photo" class="photo">
+            </div>
+            <div class="contain2">
+                <h2>Tony Robbins</h2>
+                <span class="experience">VP of business at Academia.edu</span>
+                <span class="achive">Anthony Jay Robbins is an American author, coach and speaker. He is known for his infomercials, seminars, and self-help books including the books Unlimited Power and Awaken the Giant Within. </span>
+                <div class="contain3">
+                    <button class="btn1">People Management</button>
+                    <button class="btn2">Mindset</button>
+                    <button class="btn3">Career Development</button>
+                    <button class="btn4">Product Management</button>
+                    <button class="btn5">Coaching</button>
+                </div>
+                <div class="cost">
+                    <div class="price"><b>Price</b>/Month</div>
+                    <div class="join">
+                        <button class="btn6">View Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="about">
+            <div class="contain1">
+                <img src="https://cdn.mentorcruise.com/cdn-cgi/image/width=368,format=auto/https://cdn.mentorcruise.com/cache/a2cd38990e750a3534bf65d6e8dcf29d/95ee287123f8a2cc/dacb871ca1e7e2d886fa150c05c3ee1f.jpg" alt=" no photo" class="photo">
+            </div>
+            <div class="contain2">
+                <h2>Eric Jude</h2>
+                <span class="experience">Judging Top 50 Finalists at the Jack Ma Foundation + Startup Coach at Emergeconf.io</span>
+                <span class="achive">I coach entrepreneurs and startups to avoid any roadblocks and build businesses that succeed.
+                    You can either book one of the plans or if you are new to mentorship I suggest booking one of my sessions to get started. I am a Round 2 judge for the ABH 2023 (Jack Ma Foundation).</span>
+                <div class="contain3">
+                    <button class="btn1">Software Architecture</button>
+                    <button class="btn2">Software Engineering</button>
+                    <button class="btn3">Agile</button>
+                    <button class="btn4">Design Patterns</button>
+                    <button class="btn5">Clean Code</button>
+                </div>
+                <div class="cost">
+                    <div class="price"><b>Price</b>/Month</div>
+                    <div class="join">
+                        <button class="btn6">View Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="about">
+            <div class="contain1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxuC2oZKuBavcGR97orYCdYUCL_wApSSTKrhhRMzo31RVTn8Gp"
+                    alt=" no photo" class="photo">
+            </div>
+            <div class="contain2">
+                <h2>Grant Cardone</h2>
+                <span class="experience">SUCCESS IS YOUR DUTY, OBLIGATION, RESPONSIBILITY.</span>
+                <span class="achive">I work with small companies and Fortune 500 companies to grow sales by finding overlooked opportunities and customizing the sales process to be more effective. I have worked with companies like Google, Sprint, Aflac, Toyota, GM, Ford, and thousands more. I own and operate seven companies that do almost $100 million in annual sales and I am also a New York Times bestselling author.</span>
+                <div class="contain3">
+                    <button class="btn1">Elixir</button>
+                    <button class="btn2">Phoenix Framework</button>
+                    <button class="btn3">Leadership</button>
+                    <button class="btn4">StartUp</button>
+                    <button class="btn5">Backend</button>
+                </div>
+                <div class="cost">
+                    <div class="price"><b>Price</b>/Month</div>
+                    <div class="join">
+                        <button class="btn6">View Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="about">
+            <div class="contain1">
+                <img src="https://yt3.googleusercontent.com/ytc/AIdro_kwgqMmzpoZThTYYZVyrcFZwhBa9lbHqW1e5qjx=s900-c-k-c0x00ffffff-no-rj"
+                    alt=" no photo" class="photo">
+            </div>
+            <div class="contain2">
+                <h2>Jay Abraham</h2>
+                <span class="experience">Jay Abraham : a proven business leader and top executive coach in the United States.</span>
+                <span class="achive">As Founder and CEO of The Abraham Group, Inc. (Los Angeles, California), Jay has spent his entire career solving complex problems and fixing underperforming businesses. He has significantly increased the bottom lines of over 10,000 clients in more than 1,000 industries, and over 7,200 sub industries, worldwide. Jay has dealt every type of business scenario and issue.</span>
+                <div class="contain3">
+                    <button class="btn1">Engineering Management</button>
+                    <button class="btn2">Software Engineering</button>
+                    <button class="btn3">Management</button>
+                    <button class="btn4">Career</button>
+                    <button class="btn5">Marketing</button>
+                </div>
+                <div class="cost">
+                    <div class="price"><b>Price</b>/Month</div>
+                    <div class="join">
+                        <button class="btn6">View Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="about">
+            <div class="contain1">
+                <img src="https://media.licdn.com/dms/image/C4E03AQHt9JvJ0F3WeA/profile-displayphoto-shrink_800_800/0/1645620236595?e=2147483647&v=beta&t=RBpDxCosDUfiEZq4sE4_x__pxgjFsb4Vf_x4JkYJfbY"
+                    alt=" no photo" class="photo">
+            </div>
+            <div class="contain2">
+                <h2>John Mattone</h2>
+                <span class="experience">
+                    BESTSELLING AUTHOR, TOP EXECUTIVE COACH, AND FOUNDER OF JOHN MATTONE GLOBAL—ONE OF THE WORLD TOP 10 EXECUTIVE COACHING COMPANIES</span>
+                <span class="achive">For the fifth time in the past six years–2019, 2020, 2021, 2023, and 2024 the research organization, Globalgurus.org, recently awarded John Mattone with the prestigious world #1 coaching authority ranking followed by Peter Chee and Tony Robbins. John was also a finalist for the 2017 Thinkers50 Leadership Award recognizing the world top leadership authority and thinker.</span>
+                <div class="contain3">
+                    <button class="btn1">Promotion</button>
+                    <button class="btn2">Accountability</button>
+                    <button class="btn3">Career Growth</button>
+                    <button class="btn4">StartUp</button>
+                    <button class="btn5">Managers</button>
+                </div>
+                <div class="cost">
+                    <div class="price"><b>Price</b>/Month</div>
+                    <div class="join">
+                        <button class="btn6">View Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="about">
+            <div class="contain1">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYwCX4IL6wMF1oK1teR4vKsK9it__E7c24DSCWwSLj21PfoUV97InyLYhjEyHqxeXpi3g8zw"
+                    alt=" no photo" class="photo">
+            </div>
+            <div class="contain2">
+                <h2>Robin Sharma</h2>
+                <span class="experience">Celebrated Leadership Expert + Advisor to Business Titans + Humanitarian</span>
+                <span class="achive">Robin Sharma is considered to be one of the Top 5 Leadership Experts in the world as well as an internationally acclaimed bestselling author. His work is embraced by rock stars, royalty, billionaires and celebrity CEOs.</span>
+                <div class="contain3">
+                    <button class="btn1">React Js</button>
+                    <button class="btn2">Founder</button>
+                    <button class="btn3">System Design</button>
+                    <button class="btn4">Entrepreneurship</button>
+                    <button class="btn5">Marketing</button>
+                </div>
+                <div class="cost">
+                    <div class="price"><b>Price</b>/Month</div>
+                    <div class="join">
+                        <button class="btn6">View Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
